@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_disable_and_enable_plugin.html 
+keywords:  
+summary: Wenn Sie die SnapCenter Datensicherungsfunktionen nicht mehr benötigen, müssen Sie die Konfiguration des SnapCenter VMware Plug-ins ändern. Wenn Sie das Plug-in beispielsweise in einer Testumgebung bereitgestellt haben, müssen Sie möglicherweise die SnapCenter Funktionen in dieser Umgebung deaktivieren und in einer Produktionsumgebung aktivieren. 
+---
+= Deaktivieren und aktivieren Sie das SnapCenter Plug-in für VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie die SnapCenter Datensicherungsfunktionen nicht mehr benötigen, müssen Sie die Konfiguration des SnapCenter VMware Plug-ins ändern. Wenn Sie das Plug-in beispielsweise in einer Testumgebung bereitgestellt haben, müssen Sie möglicherweise die SnapCenter Funktionen in dieser Umgebung deaktivieren und in einer Produktionsumgebung aktivieren.
+
+.Bevor Sie beginnen
+* Sie müssen über Administratorrechte verfügen.
+* Stellen Sie sicher, dass keine SnapCenter-Jobs ausgeführt werden.
+
+
+.Über diese Aufgabe
+Wenn Sie das SnapCenter VMware Plug-in deaktivieren, werden alle Ressourcengruppen ausgesetzt und das Plug-in wird als Erweiterung in vCenter nicht registriert.
+
+Wenn Sie das SnapCenter VMware Plug-in aktivieren, wird das Plug-in als Erweiterung in vCenter registriert. Alle Ressourcengruppen befinden sich im Produktionsmodus und alle Zeitpläne sind aktiviert.
+
+.Schritte
+. Optional: Sichern Sie das SnapCenter VMware Plug-in MySQL Repository, wenn Sie es auf einer neuen virtuellen Appliance wiederherstellen möchten.
++
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["Sichern Sie das SnapCenter Plug-in für VMware vSphere MySQL Datenbank"].
+
+. Melden Sie sich in der SnapCenter VMware Plug-in Management GUI über das Format `\https://<OVA-IP-address>:8080`an. Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
++
+Die IP des SnapCenter-VMware-Plug-ins wird bei der Bereitstellung des Plug-ins angezeigt.
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt *Plug-in-Details* auf die Option Service, um das Plug-in zu deaktivieren.
+. Bestätigen Sie Ihre Auswahl.
++
+** Wenn Sie das SnapCenter VMware Plug-in nur zur Durchführung VM-konsistenter Backups verwendet haben
++
+Das Plug-in ist deaktiviert, und es ist keine weitere Aktion erforderlich.
+
+** Wenn Sie mithilfe des SnapCenter VMware Plug-ins applikationskonsistente Backups durchführen
++
+Das Plug-in ist deaktiviert und eine weitere Bereinigung erforderlich.
+
++
+... Melden Sie sich bei VMware vSphere an.
+... Schalten Sie die VM aus.
+... Klicken Sie im linken Navigationsbildschirm mit der rechten Maustaste auf die Instanz des SnapCenter-VMware-Plug-ins (den Namen der Datei, die bei der Bereitstellung der `.ova` virtuellen Appliance verwendet wurde), und wählen Sie *von Festplatte löschen* aus.
+... Melden Sie sich bei SnapCenter an und entfernen Sie den vSphere-Host.
+
+
+
+
+
