@@ -16,10 +16,6 @@ summary: Wenn sich der SnapCenter VMware vSphere Client falsch verhält, müssen
 [role="lead"]
 Wenn sich der SnapCenter VMware vSphere Client falsch verhält, müssen Sie möglicherweise den Browser-Cache löschen. Wenn das Problem weiterhin besteht, starten Sie den Web-Client-Service neu.
 
-
-
-== Starten Sie den VMware vSphere-Client-Service in einem Linux-vCenter
-
 .Bevor Sie beginnen
 Sie müssen vCenter 7.0U1 oder höher ausführen.
 

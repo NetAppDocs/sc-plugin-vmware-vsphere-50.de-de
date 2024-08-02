@@ -1060,18 +1060,11 @@
   <block id="bbef84b0a53276c7c512270e3dbf2029" category="paragraph">Wenn eine Ressourcengruppe Backups enthält, die sich auf einer Speicher-VM befinden, die Sie entfernen, dann schlagen nachfolgende Backups für diese Ressourcengruppe fehl.</block>
   <block id="a87f600185266e8baed2f9874a5a9772" category="list-text">Wählen Sie auf der Seite *Storage Systems* die zu entfernenden Speicher-VM aus und klicken Sie dann auf *Löschen*.</block>
   <block id="75e0ff3834a1232cc1921b91722f6f05" category="list-text">Aktivieren Sie im Bestätigungsfeld *Speichersystem entfernen* das Kontrollkästchen für *Speichersysteme löschen* und klicken Sie dann zur Bestätigung auf *Ja*. *Hinweis:* nur ESXi 7.0U1 und neuere Versionen werden unterstützt.</block>
-  <block id="d1bcb651c16c1e49822b4f7c61910214" category="paragraph"><block ref="882f890d3418627cf43cd6225ef7eb22" category="inline-link-macro-rx"></block>.</block>
-  <block id="15522b8dcb225880b816b8456110deaf" category="summary">Wenn sich der SnapCenter VMware vSphere Client falsch verhält, müssen Sie möglicherweise den Browser-Cache löschen. Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Service neu.</block>
-  <block id="fc5672573975422a722953bf5496e5ad" category="section-title">Starten Sie den Web-Client-Service in einem Linux vCenter neu</block>
-  <block id="bbbb4a3d88d4a0dafc319898d6206ae7" category="paragraph">Wenn sich Ihr vCenter auf einer Linux Appliance befindet, müssen Sie den SnapCenter VMware vSphere Client-Service mit Linux-Befehlen neu starten.</block>
-  <block id="df005eed1212d84ddce99431a04fc779" category="paragraph">Sie müssen vCenter 6.5 oder höher ausführen.</block>
   <block id="d9ac8e6076d4e4d7529e26c9238771a4" category="list-text">Verwenden Sie SSH, um sich bei der vCenter Server Appliance als Root anzumelden.</block>
   <block id="263de88bd463a408f8eabe4c8a4ace37" category="list-text">Greifen Sie mit dem folgenden Befehl auf die Appliance-Shell oder DIE BASH-Shell zu:</block>
   <block id="ad288d5d0843f98ebb574a6ae9d65a4e" category="paragraph"><block ref="2591c98b70119fe624898b1e424b5e91" prefix="" category="inline-code"></block></block>
   <block id="76acab39397c08b9a6f90dc3612ad3b4" category="list-text">Beenden Sie den Web-Client-Service mit dem folgenden HTML5-Befehl:</block>
   <block id="fe179a5e6c3cce08786099d7d4f4c814" category="paragraph"><block ref="4ad331c0aae87e53252a4e9c0fb7b3fe" prefix="" category="inline-code"></block></block>
-  <block id="4c09019cb803ffc62d7d0666df0def34" category="list-text">Löschen Sie alle veralteten scvm-Pakete auf vCenter mithilfe des folgenden HTML5-Befehls:</block>
-  <block id="7f52ae2d13fc881eab436a11ad6556a4" category="paragraph"><block ref="ca3710e05c94c666b5609593ee562322" prefix="" category="inline-code"></block></block>
   <block id="9246d25288272bdfe6c58f34a564ec38" category="admonition">Entfernen Sie die Pakete VASA oder vCenter 7.x und höher nicht.</block>
   <block id="1ee241c7544c04de9f1ca46058beb4cb" category="list-text">Starten Sie den Web-Client-Dienst mit dem folgenden HTML5-Befehl:</block>
   <block id="6b76a32b7668e5fed9b8e910943fdee7" category="paragraph"><block ref="bfbe7f4b006f6fcfc7bb66e075309067" prefix="" category="inline-code"></block></block>
@@ -1577,7 +1570,6 @@
   <block id="a98b46e8dc0787e4a139fb1be67e3938" category="paragraph">Jeder REST-API-Name enthält die SnapCenter-Versionsnummer, in der die REST-API zum ersten Mal freigegeben wurde. Beispielsweise wurde die REST-API<block ref="00dc830fa803616a49708e2e3e3c8b5b" prefix=" " category="inline-code"></block> zum ersten Mal im SnapCenter 4.1 veröffentlicht.</block>
   <block id="85505477b7b3ad4a3b0be0e4741456cf" category="paragraph">REST-APIs in zukünftigen Versionen werden in der Regel abwärtskompatibel sein und je nach Bedarf an neuen Funktionen angepasst werden.</block>
   <block id="0732e8e379c23dc5fb5e0055374a7f1d" category="summary">Wenn sich der SnapCenter VMware vSphere Client falsch verhält, müssen Sie möglicherweise den Browser-Cache löschen. Wenn das Problem weiterhin besteht, starten Sie den Web-Client-Service neu.</block>
-  <block id="ae6aa491e5b4d2d79971ced34f86c80e" category="section-title">Starten Sie den VMware vSphere-Client-Service in einem Linux-vCenter</block>
   <block id="e570bf7b85385c5bda85ef035051e28f" category="paragraph">Sie müssen vCenter 7.0U1 oder höher ausführen.</block>
   <block id="2ee1caebace3a32360ade0d209b1e8ac" category="list-text">Löschen Sie alle veralteten HTML5-Scvm-Pakete auf vCenter mithilfe des folgenden Shell-Befehls:</block>
   <block id="af6d7d31c35cf99b12c13a1c1f334d32" category="paragraph"><block ref="3d6deff69cb4148925c5d031dca2f3e7" prefix="" category="inline-code"></block></block>
@@ -2103,4 +2095,5 @@
   <block id="c257f5c852c12409e63afb17104f69c5" category="sidebar">Rest-APIs</block>
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">REST-APIs-Workflows zum Ändern integrierter Zeitpläne</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">Führen Sie ein Upgrade auf einen neuen Patch derselben Version durch</block>
+  <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>.</block>
 </blocks>
