@@ -2051,7 +2051,6 @@
   <block id="5a2083853297d8e177a0fe4d54c85aad" category="paragraph">Mit dieser Aufgabe können Sie die standardmäßigen Einstellungen des Überwachungsprotokolls ändern.</block>
   <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">Geben Sie im Bereich *Audit Log Settings* die maximale Anzahl an Audit Log Files und die maximale Größe der Audit Log Files ein.</block>
   <block id="f1505fcf11606ca7535d26bceed3763b" category="sidebar">Das SnapCenter Plug-in für VMware vSphere (SCV) ist eine Linux-basierte virtuelle Appliance. Als Standalone-Version bietet sie schnelle, platzsparende, absturzkonsistente und VM-konsistente Backup- und Restore-Prozesse für VMs, Datastores und VMDKs. Zudem funktioniert OnCommand mit SnapCenter Server, um applikationsspezifische Backup- und Restore-Vorgänge in VMware Umgebungen für applikationsspezifische SnapCenter Plug-ins zu unterstützen. Diese Dokumentationsbibliothek beschreibt das SnapCenter-Plug-in für VMware vSphere Version 5.0.</block>
-  <block id="8c3d0c00ea667e3e0723e5cdc6473a09" category="sidebar">Dokumentation zum SnapCenter Plug-in für VMware vSphere</block>
   <block id="35b654fd14f12a33551c1993b5321fcb" category="sidebar">Das SnapCenter Plug-in für VMware vSphere (SCV) ist eine Linux-basierte virtuelle Appliance. Als Standalone-Version bietet sie schnelle, platzsparende, absturzkonsistente und VM-konsistente Backup- und Restore-Prozesse für VMs, Datastores und VMDKs. Zudem funktioniert OnCommand mit SnapCenter Server, um applikationsspezifische Backup- und Restore-Vorgänge in VMware Umgebungen für applikationsspezifische SnapCenter Plug-ins zu unterstützen.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Los geht's</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">Versionshinweise</block>
@@ -2096,4 +2095,5 @@
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">REST-APIs-Workflows zum Ändern integrierter Zeitpläne</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">Führen Sie ein Upgrade auf einen neuen Patch derselben Version durch</block>
   <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>.</block>
+  <block id="e2baf69e920d271345d54408c922dc4e" category="sidebar">Dokumentation zum SnapCenter Plug-in für VMware vSphere 5.0</block>
 </blocks>
