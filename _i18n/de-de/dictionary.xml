@@ -328,8 +328,6 @@
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">Verknüpfter Modus</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">Im Linked-Modus besitzt jedes vCenter eine separate virtuelle Appliance. Daher können Sie doppelte Namen in allen vCenters verwenden. Sie müssen die Richtlinie jedoch im selben vCenter wie die Ressourcengruppe erstellen.</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">Nicht unterstützte Zeichen</block>
-  <block id="69a02b2d668a0ebee1d9ac100a00074c" category="paragraph">Verwenden Sie nicht die folgenden Sonderzeichen in VMs, Datenspeicher, Cluster, Richtlinien, Backups, Oder Ressourcengruppennamen: % &amp; * € # @ ! \ / : * ? " &lt; &gt; - ; ' , .</block>
-  <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">Ein Unterstrich (_) ist zulässig.</block>
   <block id="6e0b19728555d1c2b7bc98ce7895aced" category="list-text">Geben Sie die Frequenzeinstellungen an.</block>
   <block id="52b19e85e6a29b6fe5690f47944f859f" category="paragraph">Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitplan für das Sichern ist in der Ressourcengruppe festgelegt. Daher können zwei oder mehr Ressourcengruppen dieselbe Richtlinien- und Backup-Häufigkeit teilen, jedoch unterschiedliche Backup-Pläne haben.</block>
   <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">Aktivieren Sie das Kontrollkästchen *Sperrzeitraum*, um die Snapshot-Sperrung zu aktivieren. Sie können die Sperrfrist für Snapshots als Tage/Monate/Jahre auswählen.</block>
@@ -411,7 +409,6 @@
   <block id="c4436d4a190778b7ec1e9461f6454bdd" category="cell">VCenter Server</block>
   <block id="df86b612dee850ddbf3bd636d14cd09e" category="cell">Wählen Sie einen vCenter-Server aus.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">Name</block>
-  <block id="306239feaf3736ab46598c0abf660ee1" category="cell">Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % &amp; * € # @ ! \ / : * ? " &lt; &gt; - [vertikaler Balken] ; ' , . Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Modus verfügt jedes vCenter über ein separates VMware Plug-in-Repository von SnapCenter. Daher können Sie doppelte Namen in allen vCenters verwenden.</block>
   <block id="b1358d1843f648e7ea781a21a690cdd0" category="cell">Geben Sie eine Beschreibung der Ressourcengruppe ein.</block>
   <block id="96d008db67fc0b5551a926842bbb6a71" category="cell">Benachrichtigung</block>
   <block id="3a703c8a96e830eedbe6543218be1f6d" category="cell">Wählen Sie aus, wann Sie Benachrichtigungen über Vorgänge dieser Ressourcengruppe erhalten möchten: Fehler oder Warnungen: Nur Fehler und Warnungen senden: Nur Benachrichtigungen für Fehler senden immer nur senden: Benachrichtigung für alle Nachrichtentypen senden nie: Keine Benachrichtigung senden</block>
@@ -983,7 +980,6 @@
   <block id="e3c333b91de412cbe4acc72a0b293a5f" category="paragraph"><block ref="e3c333b91de412cbe4acc72a0b293a5f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d25235da54411fda3f47e1c47b94db2" category="list-text">Wählen Sie auf der Registerkarte Konfigurieren ein Backup aus und klicken Sie auf *Umbenennen*.</block>
   <block id="27947ec6e4013d1b08faee7e509cae9e" category="list-text">Geben Sie im Dialogfeld *Backup umbenennen* den neuen Namen ein und klicken Sie auf *OK*.</block>
-  <block id="f8ffb952d62ac560c6adb8ac7e15a58e" category="paragraph">Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: &amp; * € # @ ! \ / : * ? " &lt; &gt; - ; ' , . Ein Unterstrich (_) ist zulässig.</block>
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">Backups löschen</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">Das SnapCenter Plug-in für VMware vSphere Backups kann gelöscht werden, wenn das Backup für andere Datensicherungsvorgänge nicht mehr benötigt wird. Sie können ein Backup löschen oder mehrere Backups gleichzeitig löschen.</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">Sie können keine Backups löschen, die angehängt sind. Sie müssen die Bereitstellung einer Sicherung aufheben, bevor Sie sie löschen können.</block>
@@ -1033,7 +1029,6 @@
   <block id="86f5d700774abd1b4b1161e6afcd312e" category="section-title">Ressourcengruppen ändern</block>
   <block id="1850764f60496630a671ed4a4ca36a90" category="paragraph">Ressourcen in Ressourcengruppen in vCenter können entfernt oder hinzugefügt, Richtlinien abgetrennt oder zugewiesen, Zeitpläne geändert oder andere Optionen für Ressourcengruppen geändert werden.</block>
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">Wenn Sie den Namen einer Ressourcengruppe ändern möchten, verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen:</block>
-  <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">% &amp; * # @ ! \ / : * ? " &lt; &gt; - ; ' , .</block>
   <block id="bc967eed1e1f8494f71a02de0d06a1ba" category="list-text">Klicken Sie in der linken Liste im Assistenten * Ressourcengruppe bearbeiten* auf die Kategorie, die Sie ändern möchten, und geben Sie Ihre Änderungen ein.</block>
   <block id="e71911e6fc1645b76466cbac653dbb12" category="paragraph">Sie können Änderungen in mehreren Kategorien vornehmen.</block>
   <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">Klicken Sie auf *Weiter*, bis die Übersichtsseite angezeigt wird, und klicken Sie dann auf *Fertig stellen*.</block>
@@ -2096,4 +2091,8 @@
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">Führen Sie ein Upgrade auf einen neuen Patch derselben Version durch</block>
   <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>.</block>
   <block id="e2baf69e920d271345d54408c922dc4e" category="sidebar">Dokumentation zum SnapCenter Plug-in für VMware vSphere 5.0</block>
+  <block id="5bd9bc63b757ece9c73f7a7bf3991c1b" category="paragraph">Verwenden Sie nicht die folgenden Sonderzeichen in VMs, Datenspeicher, Cluster, Richtlinien, Backups, Oder Ressourcengruppennamen: % &amp; * € # @ ! \ / : * ? " &lt; &gt; - | ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig.</block>
+  <block id="6f19ce572bcae00ee63d0e21fd68e1b0" category="cell">Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % &amp; * € # @ ! \ / : * ? " &lt; &gt; - [vertikaler Strich] ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Modus verfügt jedes vCenter über ein separates VMware Plug-in-Repository von SnapCenter. Daher können Sie doppelte Namen in allen vCenters verwenden.</block>
+  <block id="9d9d361ca66b8af5110eb490c5e40c1a" category="paragraph">Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: &amp; * € # @ ! \ / : * ? " &lt; &gt; - | ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig.</block>
+  <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% &amp; * # @ ! \ / : * ? " &lt; &gt; - | ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig.</block>
 </blocks>
